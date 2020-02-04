@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import routes from './routes';
 import Menu from './components/Menu/Menu';
 
-export default class App extends Component {
+class App extends Component {
     render() {
         return (
             <Router>
@@ -32,7 +32,4 @@ export default class App extends Component {
     }
 }
 
-if (document.getElementById('app')) {
-    ReactDOM.render(<App />, document.getElementById('app'));
-}
-
+export default App;
